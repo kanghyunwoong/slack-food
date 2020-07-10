@@ -1,0 +1,31 @@
+server:
+  port: 80
+
+spring:
+  application:
+    name:slack-food
+
+  jpa:
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    generate-ddl: true
+  h2:
+    console:
+      enabled: true
+
+#db설정
+datasource:
+  driver-class-name: org.h2.Driver
+  url: jdbc:h2:mem:bot
+  username: sa
+  password:
+
+slack:
+  token: xoxb-1207811873123-1213803025444-SanHL5nbSoPQvH74OtfbI2jR
+
+kakao:
+  key: KakaoAK 7ebcff8e3662ce728a9d68b0a3907fdd
+
